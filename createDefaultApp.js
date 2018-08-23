@@ -1,12 +1,13 @@
 let express = require('express');
-let kunware = require('./');
-let generate = kunware.generate;
-let generate2 = kunware.generate2;
+let createMiddlewareBasedOn = require('./');
+let generate = require('./lib/generate');
+let generate2 = require('./lib/generate2');
 
 module.exports = createDefaultApp;
 
 function createDefaultApp(apis, options) {
   options = options || {};
+  kunware = createMiddlewareBasedOn(options);
   let app = express();
 
   app.get('/api-docs', kunware.apiDocs(apis));

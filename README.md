@@ -23,8 +23,9 @@ Options:
   -h, --help                 Show help
   -v, --version              Show version
   -p, --port <port>          Set server port, default is 8000
-  -w, --watch                Watch mode: Restart on Swagger changes
+  -w, --watch                Watch mode: Restart on Swagger changes (cluster stuff)
   -k, --killable             Publish /kill endpoint to stop the service
+      --watch-adapt          Minimal watch mode: Adapt on swagger changes
       --no-ui                Disables the swagger ui from running
       --no-config-ui         Disables the configuration ui from running
       --no-config-back       Disables the configuration feature

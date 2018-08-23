@@ -50,7 +50,7 @@
     "mocha": "^3.2.0",
     "request": "^2.81.0",
     "rewire": "^4.0.0",
-    "sinon": "^4.5.0"
+    "sinon": "^6.5.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
